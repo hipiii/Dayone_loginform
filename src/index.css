@@ -1,80 +1,104 @@
-body {
-  margin: 0px;
+body{
+  margin: 0px; 
   padding: 0px;
-  align-items: center;
-  height: 100vh;
-  justify-content: center;
   display: flex;
-  width: 100vw;
-}
+  align-items: center; 
+  justify-content: center;   
+  height: 100vh;
+  width: 100vw; 
+} 
 
-.maindiv {
+.maindiv{
+   width: fit-content; 
+   height: fit-content; 
+  /* padding: 10px; */
+  /* border: 1px solid red; */
+  /* border: 3px solid red; */
+  box-shadow: 1px 1px 20px 5px rgb(178, 160, 160); 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px;
-  height: fit-content;
+  grid-template-columns: 1fr 1fr; 
   width: 600px;
 }
-
-.leftside {
+.leftside{
   background-color: grey;
   display: flex;
-  align-items: center;
-  gap: 30px;
   flex-direction: column;
+  align-items: center;
+  gap: 40px;
   padding: 30px 10px;
 }
+
 .button{
+  background-color: white;
   border: none;
   height: fit-content;
   width: fit-content;
   padding: 10px 30px;
-  border-radius: 10px;
-}
+  color: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(241, 236, 236);
+} 
 .description{
   text-align: center;
+  color: white;
   width: 90%;
   margin: 0px auto;
-}
 
-.rightside {
-  background-color: rgb(151, 230, 119);
-  padding: 30px 10px;
+} 
+.icons svg{
+  height: 100px;
+  width: 100px;
+  color: black;
+}
+.rightside{
+  /* background-color: blueviolet; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
   flex-direction: column;
+  gap: 30px;
+  padding: 30px 30px;
+  /* padding: 30px 30px;  */
+  justify-content: center; 
+
 }
 .Signup{
   font-size: 32px;
   font-weight: 800;
   text-transform: capitalize;
-}
-.input1{
-    padding: 10px 6px;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-}
-.input1 input{
-  outline: none;
-  padding: 10px 20px;
-}
-.input1 input::placeholder{
-  color: gray;
+ justify-content: center;
 
 }
 .submit{
-  width: fit-content;
+  background-color: red;
+  border: none;
   height: fit-content;
   width: fit-content;
   padding: 10px 30px;
+  color:white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(113, 150, 206);
+} 
+.button{
+  background-color: white;
+  border: none;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  color: black;
   border-radius: 10px;
-  background-color: green;
-  color: white;
+  box-shadow: 1px 1px 10px grey;
+  font-weight: 600;
+} 
+.input1{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
 }
+.input1 input{ 
+  outline: none;
+  padding: 10px 6px;
+}
 
+.input1 input::placeholder{
+  color: light rgb(5, 3, 3);
+} 
